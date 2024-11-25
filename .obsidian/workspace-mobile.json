@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Temporary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Temporary"
             }
           }
         ]
@@ -149,6 +149,7 @@
   },
   "active": "d6b33d54f84c167b",
   "lastOpenFiles": [
+    "README.md",
     "Git.md"
   ]
 }
