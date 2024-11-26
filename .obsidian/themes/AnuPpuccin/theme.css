@@ -1122,11 +1122,6 @@ settings:
     id: anp-tooltip-toggle
     title: Hide Tooltips
     type: class-toggle
-  -
-    id: anp-hide-external-link-icon
-    title: Hide External Link Icon
-    type: class-toggle
-    default: true
 
 # Typography
 
@@ -1155,11 +1150,6 @@ settings:
   -
     id: anp-editor-font-lp
     title: Live Preview Editor Font
-    type: variable-text
-    default: Noto Sans
-  -
-    id: anp-editor-font-rv
-    title: Reading View Editor Font
     type: variable-text
     default: Noto Sans
 
@@ -3059,8 +3049,7 @@ settings:
   --icon-color-focused: rgb(var(--ctp-accent));
 }
 
-.theme-dark,
-.theme-light {
+.theme-dark, .theme-light {
   --mono-rgb-0: var(--ctp-crust);
   --mono-rgb-100: var(--ctp-text);
   --color-red-rgb: var(--ctp-red);
@@ -3093,19 +3082,21 @@ settings:
   --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
   --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(255, 255, 255), 0.09),
-  	0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
-  	0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
-  	0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
+  0 2px 4px 0 rgba(var(--ctp-crust),.15),
+  0 1px 1.5px 0 rgba(var(--ctp-crust),.1),
+  0 1px 2px 0 rgba(var(--ctp-crust),.2),
+  0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(255, 255, 255), 0.16),
-  	0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
-  	0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
-  	0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
+  0 2px 3px 0 rgba(var(--ctp-crust),.3),
+  0 1px 1.5px 0 rgba(var(--ctp-crust),.2),
+  0 1px 2px 0 rgba(var(--ctp-crust),.4),
+  0 0 0 0 transparent;
   --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-  	0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
-  	0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
+  0px 15px 30px rgba(var(--ctp-crust), 0.3);
   --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-  	0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
-  	0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
+  0px 30px 90px rgba(var(--ctp-crust), 0.2);
   --background-primary: rgb(var(--ctp-base));
   --background-primary-alt: rgb(var(--ctp-mantle));
   --background-secondary: rgb(var(--ctp-mantle));
@@ -3119,7 +3110,7 @@ settings:
   --background-modifier-error-rgb: var(--ctp-red);
   --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
   --background-modifier-message: rgba(var(--ctp-crust), 0.9);
-  --modal-border-color: rgb(var(--ctp-surface0));
+  --modal-border-color:rgb(var(--ctp-surface0));
   --text-normal: rgb(var(--ctp-text));
   --text-muted: rgb(var(--ctp-overlay2));
   --text-muted-rgb: var(--ctp-overlay2);
@@ -3138,7 +3129,7 @@ settings:
   --max-width-image: 90%;
   --drag-ghost-background: rgb(var(--ctp-text));
   --drag-ghost-text-color: rgb(var(--ctp-crust));
-  --nav-indentation-guide-color: rgb(var(--ctp-overlay0));
+  --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
   --titlebar-text-color-focused: var(--color-accent);
   --callout-title-padding: var(--size-4-2);
   --table-border-width: var(--anp-table-thickness, 1px);
@@ -3180,9 +3171,7 @@ body {
   --anp-preview-width-max: 800px;
   --anp-header-margin-value: 15px;
   --anp-header-font: "Noto Serif";
-  --tab-stacked-pane-width: calc(
-  	var(--anp-tab-stacked-pane-width, 1) * var(--file-line-width)
-  );
+  --tab-stacked-pane-width: calc(var(--anp-tab-stacked-pane-width, 1)*var(--file-line-width));
   --anp-table-width-pct: 100%;
   --code-background: var(--anp-code-bg-color, var(--background-secondary-alt));
   --canvas-color: var(--ctp-overlay2);
@@ -3254,10 +3243,6 @@ body.theme-dark {
 
 .markdown-source-view.is-live-preview {
   --font-text: var(--anp-editor-font-lp, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
-}
-
-.markdown-preview-view {
-  --font-text: var(--anp-editor-font-rv, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
 }
 
 /*-Highlighted gutter number-*/
@@ -4072,8 +4057,7 @@ body.anp-card-layout {
   --divider-width: 4px;
   --divider-width-hover: 4px;
   --tab-container-background: var(--card-background-color);
-  --file-header-border: var(--border-width) dashed
-  	var(--background-modifier-border);
+  --file-header-border: var(--border-width) dashed var(--background-modifier-border);
   --ribbon-padding: 0;
 }
 body.anp-card-layout.anp-hide-borders {
@@ -4082,8 +4066,7 @@ body.anp-card-layout.anp-hide-borders {
 body.anp-card-layout.anp-hide-borders .menu {
   border: 0px !important;
 }
-body.anp-card-layout .sidebar-toggle-button,
-body.anp-card-layout .workspace-tabs.mod-top {
+body.anp-card-layout .sidebar-toggle-button, body.anp-card-layout .workspace-tabs.mod-top {
   --tab-container-background: var(--card-background-color);
 }
 body.anp-card-layout .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
@@ -4114,30 +4097,32 @@ body.anp-card-layout.anp-card-layout-actions .side-dock-actions {
   margin-top: 2px;
   border-width: 1px 1px 0px 1px;
 }
-body.anp-card-layout.anp-card-layout-actions .side-dock-actions {
+body.anp-card-layout.anp-card-layout-actions .side-dock-actions, body.anp-card-layout.anp-card-layout-actions .side-dock-settings {
   border-style: solid;
   border-color: var(--tab-outline-color);
   background-color: var(--card-foreground-color);
+}
+body.anp-card-layout.anp-card-layout-actions .side-dock-settings {
+  border-width: 1px 1px 0px 0px;
+  border-radius: 0px var(--anp-card-radius, var(--radius-xl)) 0px 0px;
 }
 body.anp-card-layout.anp-card-layout-actions.anp-fixed-status-bar .side-dock-settings {
   border-width: 1px;
   border-radius: 0px var(--anp-card-radius, var(--radius-xl)) var(--anp-card-radius, var(--radius-xl)) 0px;
 }
-body.anp-card-layout .side-dock-actions {
+body.anp-card-layout .side-dock-actions,
+body.anp-card-layout .side-dock-settings {
   padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
-}
-body.anp-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  border: none;
-  margin: var(--anp-card-layout-padding, 10px);
-  margin-bottom: 0;
-  background-color: transparent;
 }
 body.anp-card-layout .workspace-ribbon.mod-left {
   margin-top: calc(var(--header-height) - 1px);
 }
-body.anp-card-layout .workspace-tab-header-container,
-body.anp-card-layout .workspace-ribbon.mod-left:before {
+body.anp-card-layout .workspace-tab-header-container, body.anp-card-layout .workspace-ribbon.mod-left:before {
   border-bottom: none;
+}
+body.anp-card-layout .mod-vertical .workspace-tabs {
+  padding-left: var(--anp-card-layout-padding, 10px);
+  padding-right: var(--anp-card-layout-padding, 10px);
 }
 body.anp-card-layout .mod-vertical .workspace-tabs .workspace-tab-header-container {
   padding-left: var(--anp-card-header-left-padding, 20px);
@@ -4153,8 +4138,10 @@ body.anp-card-layout .mod-right-split .workspace-tab-container {
   background-color: var(--tab-container-background);
 }
 body.anp-card-layout .workspace-split .workspace-leaf-content:not([data-type=file-explorer]), body.anp-card-layout.anp-card-layout-filebrowser .workspace-leaf-content[data-type=file-explorer] {
+  border-radius: var(--anp-card-radius, var(--radius-xl));
   background-color: var(--card-foreground-color);
   border: 1px solid var(--tab-outline-color);
+  margin-bottom: var(--anp-card-layout-padding, 10px);
 }
 body.anp-card-layout.anp-card-shadows .workspace-split .workspace-leaf-content, body.anp-card-layout.anp-card-shadows.anp-card-layout-actions .side-dock-actions, body.anp-card-layout.anp-card-shadows.anp-card-layout-filebrowser .workspace-split .workspace-leaf-content[data-type=file-explorer] {
   box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
@@ -4192,15 +4179,6 @@ body.anp-card-layout .workspace-drop-overlay:before {
   margin: auto;
 }
 
-body.anp-card-layout:not(.is-phone) .mod-vertical .workspace-tabs {
-  padding-left: var(--anp-card-layout-padding, 10px);
-  padding-right: var(--anp-card-layout-padding, 10px);
-}
-body.anp-card-layout:not(.is-phone) .workspace-split .workspace-leaf-content:not([data-type=file-explorer]), body.anp-card-layout:not(.is-phone).anp-card-layout-filebrowser .workspace-leaf-content[data-type=file-explorer] {
-  border-radius: var(--anp-card-radius, var(--radius-xl));
-  margin-bottom: var(--anp-card-layout-padding, 10px);
-}
-
 /*--------------------------
 Inspired by https://github.com/Akifyss/obsidian-border
 ---------------------------*/
@@ -4219,8 +4197,17 @@ body.anp-border-layout .horizontal-main-container {
 body.anp-border-layout.anp-fixed-status-bar {
   --anp-border-bottom-padding: calc(var(--anp-border-padding, 20px) - 18px);
 }
+body.anp-border-layout .workspace {
+  margin-right: var(--anp-border-padding, 20px);
+}
 body.anp-border-layout .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container {
   border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
 }
 body.anp-border-layout .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   border-left: var(--border-border-style);
@@ -4228,12 +4215,19 @@ body.anp-border-layout .workspace:not(.is-left-sidedock-open) .workspace-split.m
 body.anp-border-layout .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container {
   border-right: var(--border-border-style);
 }
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
+body.anp-border-layout .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+}
 body.anp-border-layout .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   border-right: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split.mod-left-split {
   background-color: var(--card-background-color);
   padding-left: calc(var(--anp-border-padding, 20px) - 20px);
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
 }
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs {
   background-color: var(--card-background-color);
@@ -4248,19 +4242,16 @@ body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tab
   border-left: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
   border-bottom: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
   border-top: var(--border-border-style);
   border-left: var(--border-border-style);
 }
-body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  border-top: none;
-  background-color: var(--card-foreground-color);
-  border-left: var(--border-border-style);
-  border-bottom: var(--border-border-style);
-}
 body.anp-border-layout .workspace .workspace-split.mod-right-split {
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
   background-color: var(--card-background-color);
 }
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs {
@@ -4276,14 +4267,17 @@ body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-ta
   border-right: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs:last-child .workspace-tab-container {
+  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
   border-bottom: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
   border-top: var(--border-border-style);
   border-right: var(--border-border-style);
 }
 body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) {
   background-color: var(--card-background-color);
+  padding-bottom: var(--anp-border-bottom-padding, 20px);
 }
 body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) > .workspace-split {
   padding-bottom: 0;
@@ -4319,43 +4313,6 @@ body.anp-border-layout .workspace-ribbon.mod-left, body.anp-border-layout .works
 }
 body.anp-border-layout.is-popout-window .workspace {
   margin-left: var(--anp-border-padding, 20px);
-}
-
-body.anp-border-layout:not(.is-mobile) .workspace {
-  margin-right: var(--anp-border-padding, 20px);
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split {
-  padding-bottom: var(--anp-border-bottom-padding, 20px);
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-container {
-  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split {
-  padding-bottom: var(--anp-border-bottom-padding, 20px);
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split .workspace-tabs:last-child .workspace-tab-container {
-  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-container {
-  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) {
-  padding-bottom: var(--anp-border-bottom-padding, 20px);
-}
-body.anp-border-layout:not(.is-mobile) .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs.mod-top-left-space .workspace-tab-container {
-  border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:last-child .workspace-tab-container {
-  border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs.mod-top-right-space .workspace-tab-container {
-  border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
-}
-body.anp-border-layout:not(.is-mobile) .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical .workspace-tabs:last-child .workspace-tab-container {
-  border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
 }
 
 .anp-bg-fix .workspace,
@@ -4663,8 +4620,8 @@ Support me: https://buymeacoffee.com/AnubisNekhet
   --link-decoration-active: none;
 }
 
-.anp-hide-external-link-icon .external-link,
-.anp-hide-external-link-icon .external-link:hover {
+.external-link,
+.external-link:hover {
   background-image: none;
   padding-right: 0px;
 }
@@ -6951,62 +6908,51 @@ None of the original code was used and the feature was implemented from scratch.
 * folder colors.
 *---------------------------------------------------------------*/
 .nav-folder-children > .nav-folder:nth-child(11n+2),
-.nav-files-container > div > .nav-folder:nth-child(11n+2),
 [data-type=bookmarks] .tree-item:nth-child(11n+2) {
   --rainbow-folder-color: var(--ctp-red);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+3),
-.nav-files-container > div > .nav-folder:nth-child(11n+3),
 [data-type=bookmarks] .tree-item:nth-child(11n+3) {
   --rainbow-folder-color: var(--ctp-maroon);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+4),
-.nav-files-container > div > .nav-folder:nth-child(11n+4),
 [data-type=bookmarks] .tree-item:nth-child(11n+4) {
   --rainbow-folder-color: var(--ctp-peach);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+5),
-.nav-files-container > div > .nav-folder:nth-child(11n+5),
 [data-type=bookmarks] .tree-item:nth-child(11n+5) {
   --rainbow-folder-color: var(--ctp-yellow);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+6),
-.nav-files-container > div > .nav-folder:nth-child(11n+6),
 [data-type=bookmarks] .tree-item:nth-child(11n+6) {
   --rainbow-folder-color: var(--ctp-green);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+7),
-.nav-files-container > div > .nav-folder:nth-child(11n+7),
 [data-type=bookmarks] .tree-item:nth-child(11n+7) {
   --rainbow-folder-color: var(--ctp-teal);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+8),
-.nav-files-container > div > .nav-folder:nth-child(11n+8),
 [data-type=bookmarks] .tree-item:nth-child(11n+8) {
   --rainbow-folder-color: var(--ctp-sky);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+9),
-.nav-files-container > div > .nav-folder:nth-child(11n+9),
 [data-type=bookmarks] .tree-item:nth-child(11n+9) {
   --rainbow-folder-color: var(--ctp-sapphire);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+10),
-.nav-files-container > div > .nav-folder:nth-child(11n+10),
 [data-type=bookmarks] .tree-item:nth-child(11n+10) {
   --rainbow-folder-color: var(--ctp-blue);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+11),
-.nav-files-container > div > .nav-folder:nth-child(11n+11),
 [data-type=bookmarks] .tree-item:nth-child(11n+11) {
   --rainbow-folder-color: var(--ctp-lavender);
 }
 .nav-folder-children > .nav-folder:nth-child(11n+12),
-.nav-files-container > div > .nav-folder:nth-child(11n+12),
 [data-type=bookmarks] .tree-item:nth-child(11n+12) {
   --rainbow-folder-color: var(--ctp-mauve);
 }
 
-.anp-rainbow-subfolder-color-toggle .nav-files-container .nav-folder.nav-folder .nav-folder,
+.anp-rainbow-subfolder-color-toggle .nav-folder.mod-root .nav-folder.nav-folder .nav-folder,
 .anp-rainbow-subfolder-color-toggle [data-type=bookmarks] .tree-item .tree-item {
   --rainbow-folder-color: inherit;
 }
@@ -7014,34 +6960,30 @@ None of the original code was used and the feature was implemented from scratch.
 /*---------------------------------------------------------------
 * FULL RAINBOW STYLE
 *---------------------------------------------------------------*/
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-folder-title,
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-file-title,
-.anp-full-rainbow-color-toggle .nav-files-container .collapse-icon svg.svg-icon,
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-title,
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-file-title,
+.anp-full-rainbow-color-toggle .nav-folder.mod-root .collapse-icon svg.svg-icon,
 .anp-full-rainbow-color-toggle .tree-item-self .tree-item-icon {
   color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
-  --icon-color: var(
-  	--anp-full-rainbow-text-inverted,
-  	var(--background-primary)
-  );
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-folder.mod-root > .nav-folder-children > .nav-file .nav-file-title {
   color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-dark .nav-files-container > .nav-folder-children > .nav-file {
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-file {
   background-color: rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity));
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-light .nav-files-container > div > .nav-file {
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-light .nav-folder.mod-root > .nav-folder-children > .nav-file {
   background-color: rgba(var(--ctp-overlay1), var(--anp-rainbow-folder-bg-opacity));
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-files-container > div > .nav-file {
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle .nav-folder.mod-root > .nav-folder-children > .nav-file {
   border-radius: 5px;
   margin-bottom: 2px;
 }
-.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
-.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div .nav-file .nav-file-title:hover {
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-title:hover,
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-folder.mod-root > .nav-folder-children .nav-file .nav-file-title:hover {
   background-color: rgba(var(--ctp-base), 0.1);
 }
-.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.is-active {
+.anp-full-rainbow-color-toggle:not(.is-grabbing) .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-file-title.is-active {
   border-color: rgba(var(--ctp-base), 0.2);
   background-color: rgba(var(--ctp-base), 0.2);
 }
@@ -7061,24 +7003,24 @@ None of the original code was used and the feature was implemented from scratch.
 .anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed::selection {
   background-color: rgba(var(--ctp-accent), 0.2);
 }
-.anp-full-rainbow-color-toggle .nav-files-container .nav-folder > .nav-folder-children {
+.anp-full-rainbow-color-toggle .nav-folder.mod-root .nav-folder > .nav-folder-children {
   padding: 0 5px 0 5px;
 }
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder {
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder {
   transition: background-color 0.4s;
   background-color: rgba(var(--rainbow-folder-color), var(--anp-rainbow-folder-bg-opacity));
   margin-bottom: 2px;
   border-radius: 5px;
 }
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder .nav-folder-children {
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-children {
   border-color: rgba(var(--ctp-crust), 0.4);
 }
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file.has-focus {
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-file.has-focus {
   background-color: rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity));
   border-left: none;
   border-color: rgb(var(--ctp-accent));
 }
-.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file > .nav-file-title, .anp-full-rainbow-color-toggle .nav-files-container > div > .nav-file.has-focus > .nav-file-title {
+.anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title, .anp-full-rainbow-color-toggle .nav-folder.mod-root > .nav-folder-children > .nav-file.has-focus > .nav-file-title {
   margin-bottom: 0;
 }
 .anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-file-title, .anp-full-rainbow-color-toggle .workspace-leaf.mod-active .nav-folder.has-focus > .nav-file-title:focus-within,
@@ -7087,7 +7029,10 @@ None of the original code was used and the feature was implemented from scratch.
   box-shadow: none;
 }
 
-.anp-full-rainbow-text-color-toggle-dark.theme-dark,
+.anp-full-rainbow-text-color-toggle-dark.theme-dark {
+  --anp-full-rainbow-text-inverted: rgb(var(--ctp-text));
+}
+
 .anp-full-rainbow-text-color-toggle-light.theme-light {
   --anp-full-rainbow-text-inverted: rgb(var(--ctp-text));
 }
@@ -7095,7 +7040,7 @@ None of the original code was used and the feature was implemented from scratch.
 /*---------------------------------------------------------------
 * SIMPLE RAINBOW STYLE
 *---------------------------------------------------------------*/
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle .nav-files-container > div > .nav-folder .nav-folder-title,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-title,
 .anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle [data-type=bookmarks] .tree-item .tree-item-inner {
   transition: color 0.4s;
   color: rgba(var(--rainbow-folder-color), var(--anp-simple-rainbow-opacity, 1));
@@ -7105,7 +7050,7 @@ None of the original code was used and the feature was implemented from scratch.
 .anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle .nav-folder.is-being-dragged-over {
   background-color: rgba(var(--rainbow-folder-color), 0.1);
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle .nav-files-container > div > .nav-folder .nav-folder-title:after,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-title:after,
 .anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle [data-type=bookmarks] .tree-item .tree-item-inner:after {
   transition: color 0.4s;
   color: rgba(var(--rainbow-folder-color), var(--anp-simple-rainbow-opacity, 1));
@@ -7122,7 +7067,7 @@ None of the original code was used and the feature was implemented from scratch.
   flex-grow: 1;
   justify-content: space-between;
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle .nav-files-container .nav-folder > .nav-folder-children,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle .nav-folder.mod-root .nav-folder > .nav-folder-children,
 .anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle [data-type=bookmarks] .tree-item .tree-item-children {
   transition: color 0.4s;
   border-color: rgba(var(--rainbow-folder-color), 0.5);
@@ -7810,10 +7755,6 @@ None of the original code was used and the feature was implemented from scratch.
 
 .excalidraw.theme--dark.excalidraw .App-menu__left {
   --button-hover-bg: rgba(var(--ctp-surface2), 0.6) !important;
-}
-
-.excalidraw .HintViewer {
-  display: none;
 }
 
 .obsidian-icon-folder-icon {

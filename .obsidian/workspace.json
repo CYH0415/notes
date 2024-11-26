@@ -1,0 +1,246 @@
+{
+  "main": {
+    "id": "bff42b064dfa0fd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6cc1f0ffb2dac4b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9365ef962b981f11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Xlab相关/转正模板.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "转正模板"
+            }
+          },
+          {
+            "id": "11d21ce886fd39ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Xlab相关/微信小程序.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "微信小程序"
+            }
+          },
+          {
+            "id": "eab744e8958db299",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Xlab学习笔记/杂项/git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "git"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f1ac64cb4a2f6be5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2c70b4d5fca56ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7133ddb75de1f56b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "b86e678d37574bc3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "33310823445d3f75",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "60cda999d7a58896",
+    "type": "split",
+    "children": [
+      {
+        "id": "966a9b70ac943f55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3e4f6d0eb67f269",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "西音史听辨 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "西音史听辨 2 的反向链接列表"
+            }
+          },
+          {
+            "id": "ae587eceff78e1c9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "西音史听辨 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "西音史听辨 2 的出链列表"
+            }
+          },
+          {
+            "id": "f9b6b8c4a25d4be8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "38c0ad78b1922d6d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Xlab学习笔记/杂项/git.md"
+              },
+              "icon": "lucide-list",
+              "title": "git 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "eab744e8958db299",
+  "lastOpenFiles": [
+    "Xlab相关/转正模板.md",
+    "Xlab相关/微信小程序.md",
+    "六级口试.md",
+    "西音史/西音史 期末论文.md",
+    "傻逼思考题.md",
+    "未命名/desktop.ini",
+    "西音史",
+    "西音史/西音史 展示.md",
+    "西音史/西音史听辨 1.md",
+    "西音史/西音史听辨 2.md",
+    "iPad.md",
+    "test.md",
+    "Testing new file.md",
+    "Testing sync.md",
+    "Xlab学习笔记/框架/t3-app.md",
+    "Xlab学习笔记/框架/React.md",
+    "Xlab学习笔记/框架/Zod.md",
+    "Xlab学习笔记/杂项/Docker.md",
+    "Xlab学习笔记/框架/next.js.md",
+    "Xlab学习笔记/框架/JWT 鉴权.md",
+    "Xlab学习笔记/框架/中间件.md",
+    "Xlab学习笔记/_/todo.md",
+    "Xlab相关",
+    "Xlab学习笔记/7月19例会.md",
+    "Xlab学习笔记/杂项",
+    "Xlab学习笔记/登录&鉴权.md",
+    "Xlab学习笔记/网络基础 译文.md",
+    "Xlab学习笔记/网络基础准备文档.md",
+    "Xlab学习笔记/语言",
+    "Xlab学习笔记/未命名.md",
+    "Xlab学习笔记/Database/Drizzle.md",
+    "Xlab学习笔记/Database",
+    "Xlab学习笔记/_",
+    "images/Pasted image 20240524084305.png",
+    "images/Pasted image 20240719210711.png",
+    "images",
+    "images/Pasted image 20240705211020.png",
+    "images/Pasted image 20240616143016.png",
+    "images/Pasted image 20240616142513.png",
+    "images/Pasted image 20240605185814.png",
+    "images/Pasted image 20240603195415.png",
+    "images/Pasted image 20240603194751.png",
+    "Xlab学习笔记/框架",
+    "未命名.canvas",
+    "西音史/西音史展示图片/Pasted image 20240610152822.png",
+    "西音史/西音史展示图片",
+    "西音史/西音史展示图片/Pasted image 20240610153646.png",
+    "未命名 1.canvas"
+  ]
+}

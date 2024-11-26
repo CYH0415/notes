@@ -1,24 +1,22 @@
 {
   "main": {
-    "id": "f2ae4813556d3b5e",
+    "id": "33903dfd2538166d",
     "type": "split",
     "children": [
       {
-        "id": "871b8def6f5b41fe",
+        "id": "f7a769bc2e71e5b9",
         "type": "tabs",
         "children": [
           {
-            "id": "d6b33d54f84c167b",
+            "id": "432d9929e27b9fe2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Temporary.md",
+                "file": "Testing sync.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Temporary"
+              }
             }
           }
         ]
@@ -27,23 +25,21 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2a48933e6e78b485",
+    "id": "f50da0c146c45c44",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "c6926f003091899a",
+        "id": "ead4453a55e94e98",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical"
-          },
-          "icon": "lucide-folder-closed",
-          "title": "Files"
+          }
         }
       },
       {
-        "id": "8410aa0a34c8fb14",
+        "id": "738499acfd18ca5e",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -54,48 +50,42 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
-          },
-          "icon": "lucide-search",
-          "title": "Search"
+          }
         }
       },
       {
-        "id": "02e84d8b3aab0524",
+        "id": "213d7bf9ec2980b1",
         "type": "leaf",
         "state": {
           "type": "tag",
           "state": {
             "sortOrder": "frequency",
             "useHierarchy": true
-          },
-          "icon": "lucide-tags",
-          "title": "Tags"
+          }
         }
       },
       {
-        "id": "64cc14abbe72f13a",
+        "id": "ddbcc6eeb35c1f3d",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {},
-          "icon": "lucide-bookmark",
-          "title": "Bookmarks"
+          "state": {}
         }
       }
     ],
     "currentTab": 0
   },
   "right": {
-    "id": "c6bbdb4e211f0714",
+    "id": "4e56981816a1c1b6",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "e1709d0a605d0484",
+        "id": "560690632a5fcfe6",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Git.md",
+            "file": "Testing sync.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,35 +93,29 @@
             "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
-          },
-          "icon": "links-coming-in",
-          "title": "Backlinks"
+          }
         }
       },
       {
-        "id": "b6da3290ab4d5b2e",
+        "id": "bb0023583e40339b",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Git.md",
+            "file": "Testing sync.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
-          },
-          "icon": "links-going-out",
-          "title": "Outgoing links"
+          }
         }
       },
       {
-        "id": "3ad9d9fbbba3f3cc",
+        "id": "65a9e5b861464070",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "Git.md"
-          },
-          "icon": "lucide-list",
-          "title": "Outline"
+            "file": "Testing sync.md"
+          }
         }
       }
     ],
@@ -144,12 +128,57 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "d6b33d54f84c167b",
+  "active": "432d9929e27b9fe2",
   "lastOpenFiles": [
-    "README.md",
-    "Git.md"
+    "Testing sync.md",
+    "iPad.md",
+    "Testing new file.md",
+    "Xlab学习笔记/Database/PostgreSQL.md",
+    "西音史 期末论文.md",
+    "test.md",
+    "傻逼思考题.md",
+    "西音史 展示.md",
+    "西音史听辨 2.md",
+    "西音史听辨 1.md",
+    "参考文档/封面.md",
+    "参考文档/常见样式预览.md",
+    "参考文档/数学公式.md",
+    "Xlab相关/转正模板.md",
+    "Xlab学习笔记/登录&鉴权.md",
+    "Xlab学习笔记/语言/CSS.md",
+    "Xlab学习笔记/杂项/git.md",
+    "Xlab学习笔记/框架/中间件.md",
+    "Xlab学习笔记/框架/Zod.md",
+    "Xlab学习笔记/7月19例会.md",
+    "Xlab学习笔记/_/todo.md",
+    "Xlab学习笔记/语言/HTML.md",
+    "Xlab学习笔记/网络基础 译文.md",
+    "离散数学笔记统筹/时雨离散数学/6.md",
+    "离散数学笔记统筹/时雨离散数学/5.md",
+    "Xlab学习笔记/网络基础准备文档.md",
+    "离散数学笔记统筹/离散数学/img/CH03/7.png",
+    "离散数学笔记统筹/离散数学/img/CH03/6.png",
+    "离散数学笔记统筹/离散数学/img/CH03/5.png",
+    "离散数学笔记统筹/离散数学/img/CH03/4.png",
+    "离散数学笔记统筹/离散数学/img/CH03/1.png",
+    "离散数学笔记统筹/离散数学/img/CH03/3.png",
+    "离散数学笔记统筹/离散数学/img/CH03/2.png",
+    "离散数学笔记统筹/离散数学/img/CH06/05.png",
+    "离散数学笔记统筹/离散数学/img/CH06/03.png",
+    "离散数学笔记统筹/离散数学/img/CH06/04.png",
+    "离散数学笔记统筹/离散数学/img/CH08",
+    "离散数学笔记统筹/离散数学/img/CH06",
+    "离散数学笔记统筹/离散数学/img/CH03",
+    "离散数学笔记统筹/离散数学/img/CH02",
+    "离散数学笔记统筹/离散数学/img/CH01",
+    "离散数学笔记统筹/离散数学/img",
+    "离散数学笔记统筹/QAQdev/img",
+    "离散数学笔记统筹/离散数学/CH06_Counting",
+    "离散数学笔记统筹/离散数学/CH03_Algorithms",
+    "离散数学笔记统筹/离散数学/CH02_Basic_Structures"
   ]
 }

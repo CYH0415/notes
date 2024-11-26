@@ -1,0 +1,10 @@
+{
+  "findText": "[¶](https://oneko.zone/*)",
+  "replaceText": "",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

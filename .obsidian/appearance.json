@@ -1,4 +1,14 @@
 {
+  "accentColor": "#5cbaf5",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Microsoft YaHei",
+  "baseFontSize": 16,
+  "translucency": true,
+  "textFontFamily": "",
   "cssTheme": "AnuPpuccin",
-  "theme": "obsidian"
+  "baseFontSizeAction": true,
+  "monospaceFontFamily": "Consolas",
+  "enabledCssSnippets": [
+    "extended-colorschemes"
+  ]
 }
