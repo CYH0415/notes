@@ -73,3 +73,21 @@ Reuse source code
 - Function template
 	
 - Class template
+	Typical: containers `stack <int>`
+- Can use multiple types: 
+```cpp
+template <class Key, class Value>
+class Table { … }
+```
+- 模板嵌套时，尖括号之间加空格
+- Template parameters:
+```cpp
+template <class T, int bound = 100>
+class List {
+public:
+	T element[bound];
+}
+
+List <int, 20>;
+```
+- 不同数据类型模板的静态成员函数不互通
