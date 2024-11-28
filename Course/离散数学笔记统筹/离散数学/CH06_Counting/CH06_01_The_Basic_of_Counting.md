@@ -58,7 +58,7 @@ There are **n/d** ways to do a task if it can be done using a procedure that can
 
 To use trees in counting, we use a branch to represent each possible choice. We represent the possible outcomes by the leaves. 
 
-![](离散数学笔记统筹/离散数学/img/CH06/01.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH06/01.png)
 
 # Permutations and Combinations 排列&组合
 
@@ -202,7 +202,7 @@ $$
 
 ### Pascal's Triangle 帕斯卡三角形
 
-![](离散数学笔记统筹/离散数学/img/CH06/02.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH06/02.png)
 
 ## Vandermonde’s Identity 范德蒙德恒等式
 

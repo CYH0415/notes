@@ -207,11 +207,11 @@ Assume that in a group of six people, each pair of individuals consists of two f
 >
 >    then if any two of them are friends, we have three mutual friends
 >
->    ![](离散数学笔记统筹/离散数学/img/CH06/03.png)
+>    ![](Course/离散数学笔记统筹/离散数学/img/CH06/03.png)
 >
 >    else if three of them are all enemies, we have three mutual enemies
 >
->    ![](离散数学笔记统筹/离散数学/img/CH06/04.png)
+>    ![](Course/离散数学笔记统筹/离散数学/img/CH06/04.png)
 >
 > 2. Suppose that $$a_i,a_j,a_k$$ are enemies of $$a_1$$
 >
@@ -225,7 +225,7 @@ In addition, we also have that $$R(3,3)>5$$ due to a counterexample given below
 >
 > In this counterexample, there are no mutual friends or enemies
 >
-> ![](离散数学笔记统筹/离散数学/img/CH06/05.png)
+> ![](Course/离散数学笔记统筹/离散数学/img/CH06/05.png)
 
 So, we have $$R(3,3)=6$$
 

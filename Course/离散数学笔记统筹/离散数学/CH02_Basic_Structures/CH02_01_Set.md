@@ -52,7 +52,7 @@ The truth set of P(x) is denoted by {x ∈ D | P(x)}.
 
 ### Venn Diagrams 文氏图
 
-![](离散数学笔记统筹/离散数学/img/CH02/01.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH02/01.png)
 
 - In Venn diagrams, the universal set *U* is represented by a rectangle.
 - Inside this rectangle, circles or other geometrical figures are used to represent sets.
@@ -151,7 +151,7 @@ $$A_1\times A_2\times· · ·\times A_n = \{(a_1, a_2, . . . , a_n) | a_i\in A_i
 
 $$A\cap B=\{x|x\in A\wedge x\in B\}​$$
 
-![](离散数学笔记统筹/离散数学/img/CH02/02.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH02/02.png)
 
 > Two sets are called *disjoint* if their intersection is the empty set, namely $$A\cap B = \empty$$
 
@@ -163,7 +163,7 @@ $$A_1\cap A_2\cap...\cap A_n=\bigcap_{i=1}^{n}A_i$$
 
 $$A\cup B=\{x|x\in A\vee x\in B\}​$$
 
-![](离散数学笔记统筹/离散数学/img/CH02/03.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH02/03.png)
 
 > The cardinality of the union of two finite sets:
 >
@@ -177,7 +177,7 @@ $$A_1\cup A_2\cup...\cup A_n=\bigcup_{i=1}^{n}A_i$$
 
 $$A-B=\{x|x\in A\wedge x\notin B\}$$
 
-![](离散数学笔记统筹/离散数学/img/CH02/04.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH02/04.png)
 
 ### Complement 补集
 
@@ -185,7 +185,7 @@ $$\overline{A} = {x\in U | x\notin A}$$
 
 (U is the universal set)
 
-![](离散数学笔记统筹/离散数学/img/CH02/05.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH02/05.png)
 
 > **Note**:
 >

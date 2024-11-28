@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6cc1f0ffb2dac4b9",
+        "id": "3a0cd9d339fc49e6",
         "type": "tabs",
         "children": [
           {
-            "id": "9365ef962b981f11",
+            "id": "9ccf2d5519f01f85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Xlab相关/转正模板.md",
+                "file": "Web/框架/Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "转正模板"
-            }
-          },
-          {
-            "id": "11d21ce886fd39ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Xlab相关/微信小程序.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "微信小程序"
-            }
-          },
-          {
-            "id": "eab744e8958db299",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Xlab学习笔记/杂项/git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "git"
+              "title": "Python"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Xlab学习笔记/杂项/git.md"
+                "file": "Web/框架/Python.md"
               },
               "icon": "lucide-list",
-              "title": "git 的大纲"
+              "title": "Python 的大纲"
             }
           }
         ],
@@ -188,59 +159,58 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "eab744e8958db299",
+  "active": "9ccf2d5519f01f85",
   "lastOpenFiles": [
-    "Xlab相关/转正模板.md",
-    "Xlab相关/微信小程序.md",
-    "六级口试.md",
-    "西音史/西音史 期末论文.md",
-    "傻逼思考题.md",
-    "未命名/desktop.ini",
-    "西音史",
-    "西音史/西音史 展示.md",
-    "西音史/西音史听辨 1.md",
-    "西音史/西音史听辨 2.md",
-    "iPad.md",
-    "test.md",
-    "Testing new file.md",
-    "Testing sync.md",
-    "Xlab学习笔记/框架/t3-app.md",
-    "Xlab学习笔记/框架/React.md",
-    "Xlab学习笔记/框架/Zod.md",
-    "Xlab学习笔记/杂项/Docker.md",
-    "Xlab学习笔记/框架/next.js.md",
-    "Xlab学习笔记/框架/JWT 鉴权.md",
-    "Xlab学习笔记/框架/中间件.md",
-    "Xlab学习笔记/_/todo.md",
-    "Xlab相关",
-    "Xlab学习笔记/7月19例会.md",
-    "Xlab学习笔记/杂项",
-    "Xlab学习笔记/登录&鉴权.md",
+    "Web/框架/Zod.md",
+    "Web/框架/Python.md",
+    "参考文档/常见样式预览.md",
+    "images/Pasted image 20241126201509.png",
+    "images/Pasted image 20241126201138.png",
+    "微信小程序.md",
+    "README.md",
+    "Temporary.md",
     "Xlab学习笔记/网络基础 译文.md",
+    "images/Pasted image 20240411112936.png",
+    "Xlab学习笔记/登录&鉴权.md",
+    "Xlab学习笔记/7月19例会.md",
+    "images/Pasted image 20240410204251.png",
+    "images/Pasted image 20240410201904.png",
+    "images/41783d5fcd26f645383f6d3d08ea215.png",
     "Xlab学习笔记/网络基础准备文档.md",
-    "Xlab学习笔记/语言",
-    "Xlab学习笔记/未命名.md",
-    "Xlab学习笔记/Database/Drizzle.md",
-    "Xlab学习笔记/Database",
-    "Xlab学习笔记/_",
-    "images/Pasted image 20240524084305.png",
+    "Xlab学习笔记/杂项/Docker.md",
+    "Xlab学习笔记/杂项/git.md",
+    "Web/语言/TypeScript.md",
+    "Web/语言/JavaScript.md",
+    "Web/语言/HTML.md",
+    "Web/语言/Golang.md",
+    "Web/语言/CSS.md",
+    "Web/框架/t3-app.md",
+    "Web/框架/React.md",
+    "Web/框架/next.js.md",
+    "Web/框架/JWT 鉴权.md",
+    "Web/框架/中间件.md",
+    "Xlab学习笔记/_/todo.md",
+    "Xlab相关/转正模板.md",
+    "The little go book/eBook/1.8.md",
+    "The little go book/eBook/1.6.md",
     "images/Pasted image 20240719210711.png",
-    "images",
     "images/Pasted image 20240705211020.png",
     "images/Pasted image 20240616143016.png",
     "images/Pasted image 20240616142513.png",
-    "images/Pasted image 20240605185814.png",
-    "images/Pasted image 20240603195415.png",
-    "images/Pasted image 20240603194751.png",
-    "Xlab学习笔记/框架",
+    "Course",
+    "未命名/desktop.ini",
+    "Course/西音史",
+    "Xlab相关",
+    "Xlab学习笔记/杂项",
+    "Web/语言",
+    "Xlab学习笔记/Database",
+    "Xlab学习笔记/_",
+    "images",
+    "Web/框架",
     "未命名.canvas",
-    "西音史/西音史展示图片/Pasted image 20240610152822.png",
-    "西音史/西音史展示图片",
-    "西音史/西音史展示图片/Pasted image 20240610153646.png",
     "未命名 1.canvas"
   ]
 }
