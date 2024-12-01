@@ -56,7 +56,7 @@ Algorithms that make what seems to be “best” choice at each step
 
 Can we develop a procedure that takes as input a computer program along with its input and determines whether the program will eventually halt with that input.
 
-![](1.png)
+![](Course/离散数学笔记统筹/离散数学/img/CH03/1.png)
 
 # The Growth of Functions 函数的增长
 

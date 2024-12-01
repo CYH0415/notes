@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3a0cd9d339fc49e6",
+        "id": "79a0b7d8d5a98e6f",
         "type": "tabs",
         "children": [
           {
-            "id": "9ccf2d5519f01f85",
+            "id": "72503c7e3d9b1a70",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/框架/Python.md",
+                "file": "Course/历史原因.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "历史原因"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/框架/Python.md"
+                "file": "Course/历史原因.md"
               },
               "icon": "lucide-list",
-              "title": "Python 的大纲"
+              "title": "历史原因 的大纲"
             }
           }
         ],
@@ -162,10 +162,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9ccf2d5519f01f85",
+  "active": "72503c7e3d9b1a70",
   "lastOpenFiles": [
-    "Web/框架/Zod.md",
+    "images/Karte_der_Krim.png",
+    "Course/军理论文-html.md",
+    "Course/军理论文.md",
+    "Course/历史原因.md",
+    "Course/html.md",
+    "Course/1.png",
+    "images/2022_Russian_invasion_of_Ukraine.svg.png",
+    "images/41783d5fcd26f645383f6d3d08ea215.png",
+    "历史原因_嵌入HTML.md",
+    "images/History_of_NATO_enlargement.svg 1.png",
+    "images/History_of_NATO_enlargement.svg.png",
     "Web/框架/Python.md",
+    "Web/框架/Zod.md",
     "参考文档/常见样式预览.md",
     "images/Pasted image 20241126201509.png",
     "images/Pasted image 20241126201138.png",
@@ -178,7 +189,6 @@
     "Xlab学习笔记/7月19例会.md",
     "images/Pasted image 20240410204251.png",
     "images/Pasted image 20240410201904.png",
-    "images/41783d5fcd26f645383f6d3d08ea215.png",
     "Xlab学习笔记/网络基础准备文档.md",
     "Xlab学习笔记/杂项/Docker.md",
     "Xlab学习笔记/杂项/git.md",
@@ -190,16 +200,6 @@
     "Web/框架/t3-app.md",
     "Web/框架/React.md",
     "Web/框架/next.js.md",
-    "Web/框架/JWT 鉴权.md",
-    "Web/框架/中间件.md",
-    "Xlab学习笔记/_/todo.md",
-    "Xlab相关/转正模板.md",
-    "The little go book/eBook/1.8.md",
-    "The little go book/eBook/1.6.md",
-    "images/Pasted image 20240719210711.png",
-    "images/Pasted image 20240705211020.png",
-    "images/Pasted image 20240616143016.png",
-    "images/Pasted image 20240616142513.png",
     "Course",
     "未命名/desktop.ini",
     "Course/西音史",
