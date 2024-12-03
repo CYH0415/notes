@@ -91,3 +91,5 @@ public:
 List <int, 20>;
 ```
 - 不同数据类型模板的静态成员函数不互通
+## Exception 
+`try` and `catch`
