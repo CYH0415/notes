@@ -1,3 +1,5 @@
+- [9] CSS 是一门基于规则的语言，可以通过指定应用于网页上特定元素或元素组的样式组，来定义规则。他它的基本结构如下：
+
 ```css
 selector {
     attribute : value;
@@ -125,8 +127,6 @@ body {
     color: black;
 }
 ```
-#### 优先级
-#待补充
 ## Box Model
 ![[Pasted image 20240519132615.png]]
 把HTML元素看作盒子

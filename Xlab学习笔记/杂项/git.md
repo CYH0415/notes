@@ -1,14 +1,5 @@
-Test line.
-
+- [9] Git 是一个快速、可扩展的分布式版本控制系统，它具有极为丰富的命令集，对内部系统提供了高级操作和完全访问。
 # Git
-版本控制
-分布式
-delta encoding （增量编码）
-## A list
-- .gitignore
-- Syncing
-- Pull request
-- ssh
 # General ideas
 
 ## SSH

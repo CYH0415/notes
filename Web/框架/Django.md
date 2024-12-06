@@ -1,5 +1,5 @@
 # Django
-高级 python 网络框架
+- [9] Django 是一个高级的 Python 网络框架，可以快速开发安全和可维护的网站。
 ## 创建项目
 ```bash
 django-admin startproject <project-name>
@@ -30,8 +30,6 @@ DATABASES = {
 }
 ```
 - 注意安装依赖：`pip install Django psycopg2`
-- [I] 应用是类似于页面的概念
-- [c] 好吧，并不是。页面还是归 `url` 管理，应用的作用更多的是方便管理功能 
 # Concepts
 - [9] 比较重要的概念有 `url`，`view`，`template` 和 `model`，一般的逻辑是 `view` 通过使用 `template` 中的 HTML 创造出网页，同时写明相应逻辑（比如处理 POST，这个过程可能用到 `model` 进行数据库操作），然后由 `url` 将浏览器中的路径映射到这些 `view` 创造出的网页。
 ## URLs
@@ -388,4 +386,3 @@ urlpatterns += [
 ]
 ```
 - 可见 URL 以及 POST 的目标 URL 是相同的，这样在一个页面就能处理所有逻辑
-- 这样做的坏处暂时不知道，最好是么有

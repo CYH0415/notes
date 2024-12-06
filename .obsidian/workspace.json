@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English.md",
+                "file": "Web/语言/CSS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "English"
+              "title": "CSS"
+            }
+          },
+          {
+            "id": "abcd68da2020545e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/语言/三件套.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "三件套"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -139,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "English.md"
+                "file": "Web/语言/三件套.md"
               },
               "icon": "lucide-list",
-              "title": "English 的大纲"
+              "title": "三件套 的大纲"
             }
           }
         ],
@@ -150,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,13 +177,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "72503c7e3d9b1a70",
+  "active": "abcd68da2020545e",
   "lastOpenFiles": [
+    "Web/语言/JavaScript.md",
+    "Web/语言/三件套.md",
+    "Web/语言/CSS.md",
+    "Web/语言/HTML.md",
+    "Web/语言/Golang.md",
+    "Web/语言/TypeScript.md",
+    "Web/框架/Zod.md",
+    "Web/框架/t3-app.md",
+    "Web/框架/React.md",
+    "Web/框架/next.js.md",
+    "Web/框架/Django.md",
+    "Xlab学习笔记/Database/MySQL.md",
+    "Xlab学习笔记/Database/GORM.md",
+    "Xlab学习笔记/Database/Drizzle.md",
+    "Xlab学习笔记/杂项/Docker.md",
+    "Xlab学习笔记/杂项/git.md",
+    "Web/框架/中间件.md",
+    "English.md",
     "微信小程序.md",
     "未命名.canvas",
     "2024-12-06.md",
-    "English.md",
-    "Web/框架/Python.md",
     "Course/历史原因.md",
     "images/Karte_der_Krim.png",
     "Course/军理论文-html.md",
@@ -181,26 +211,11 @@
     "历史原因_嵌入HTML.md",
     "images/History_of_NATO_enlargement.svg 1.png",
     "images/History_of_NATO_enlargement.svg.png",
-    "Web/框架/Zod.md",
     "参考文档/常见样式预览.md",
     "images/Pasted image 20241126201509.png",
     "images/Pasted image 20241126201138.png",
-    "README.md",
-    "Temporary.md",
-    "Xlab学习笔记/网络基础 译文.md",
     "images/Pasted image 20240411112936.png",
-    "Xlab学习笔记/登录&鉴权.md",
-    "Xlab学习笔记/7月19例会.md",
     "images/Pasted image 20240410204251.png",
-    "Xlab学习笔记/网络基础准备文档.md",
-    "Xlab学习笔记/杂项/Docker.md",
-    "Xlab学习笔记/杂项/git.md",
-    "Web/语言/TypeScript.md",
-    "Web/语言/JavaScript.md",
-    "Web/语言/HTML.md",
-    "Web/语言/Golang.md",
-    "Web/语言/CSS.md",
-    "Web/框架/t3-app.md",
     "Course",
     "未命名/desktop.ini",
     "Course/西音史",
