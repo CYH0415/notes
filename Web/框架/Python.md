@@ -370,7 +370,7 @@ def search_post(req):
 ```
 - 处理逻辑写在这里，这里仅仅将搜索输入展示出来
 
-为了调用这一借口，需要如下的表单：`templates/post.html`
+为了调用这一接口，需要如下的表单：`templates/post.html`
 ```django
         <form action="/search-post/" method="post">
             {% csrf_token %}
