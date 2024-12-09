@@ -288,6 +288,7 @@ python3 manage.py migrate
 ```
 - `makemigrations` 创建迁移但不应用，让你能够进行修改检查
 - `migrate` 进行迁移
+### 定义模型
 在应用的 `models.py` 中建表：
 ```python
 from django.db import models
@@ -296,7 +297,27 @@ from django.db import models
 class Test(models.Model):
     name = models.CharField(max_length=20)
 ```
-其中类名即表名，且 Django 会自动添加一个 id 作为主键
+其中类名即表名，且 Django 会在需要的时候，自动添加一个 id 作为主键
+#### 域
+也就是表列，下面是一些常用域：
+- `CharField`：中短字符串，必须指定 `max_length`
+- `TestField`：长字符串
+- `IntegerField`
+    - `AutoField`：它的自增类型，且会在未设置主键的时候自动成为主键
+- `DateField` 和 `DateTimeField`
+- `FileField`
+- `ImageField`
+- `ForeignKey`：与另一个数据库的一对多关系（外键）
+    - `ManyToManyField`：多对多关系
+#### 参数
+每个域可以有多个参数，常用的如下：
+- `help_text`：提供 HTML 表单文本标签
+- `verbose_name`：字段标签中的可读性名称，如果没有被指定，Django 将从字段名称推断默认的详细名称。
+- `default`：该字段的默认值。这可以是值或可呼叫物件 (callable object)，在这种情况下，每次创建新纪录时都将呼叫该物件。
+- `null`：如为`True`，即允许 Django 于资料库该栏位写入`NULL`（但栏位型态如为`CharField`则会写入空字串）。预设值是`False`。
+- `blank`：如为 `True`，表单中的字段被允许为空白。默认是`False`，这意味着 Django 的表单验证将强制你输入一个值。这通常搭配 `NULL=True` 使用，因为如果要允许空值，你还希望数据库能够适当地表示它们。
+- `choices`：这是给此字段的一组选项。如果提供这一项，预设对应的表单部件是「该组选项的列表」，而不是原先的标准文本字段。
+- `primary_key`：如果是 True，将当前字段设置为模型的主键（主键是被指定用来唯一辨识所有不同表记录的特殊数据库栏位 (column)）。如果没有指定字段作为主键，则 Django 将自动为此添加一个字段。
 ### 数据库操作
 以下操作都发生在某个 `view` 中，使用它们的时候当然要先做 URL 映射
 #### 增

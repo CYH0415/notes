@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/语言/三件套.md",
+                "file": "Web/框架/Django.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三件套"
+              "title": "Django"
             }
           }
         ],
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "60cda999d7a58896",
@@ -154,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/语言/三件套.md"
+                "file": "Web/框架/Django.md"
               },
               "icon": "lucide-list",
-              "title": "三件套 的大纲"
+              "title": "Django 的大纲"
             }
           }
         ],
@@ -165,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,8 +181,8 @@
   },
   "active": "abcd68da2020545e",
   "lastOpenFiles": [
-    "Web/语言/JavaScript.md",
     "Web/语言/三件套.md",
+    "Web/语言/JavaScript.md",
     "Web/语言/CSS.md",
     "Web/语言/HTML.md",
     "Web/语言/Golang.md",
