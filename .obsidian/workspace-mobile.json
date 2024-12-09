@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++.md",
+                "file": "English.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C++"
+              "title": "English"
             }
           }
         ]
@@ -128,15 +128,14 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "C++.md"
+            "file": "English.md"
           },
           "icon": "lucide-list",
           "title": "Outline"
         }
       }
     ],
-    "currentTab": 2,
-    "pinned": true
+    "currentTab": 2
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,8 +149,8 @@
   },
   "active": "b08b065e6f5c1fbb",
   "lastOpenFiles": [
-    "Web/框架/Python.md",
     "C++.md",
+    "Web/框架/Python.md",
     "Xlab学习笔记/杂项/git.md",
     "Course/离散数学笔记统筹/离散数学/img/CH03/1.png",
     "Course/离散数学笔记统筹/离散数学/img/CH03/3.png",
