@@ -36,3 +36,36 @@ A solid framework
 Reach the zenith
 Tightly integrate
 Usher in a new era 
+# 作文
+## 启示
+The benefit is innumerable and manifold.
+- 多种多样的
+## 议论文
+### P1
+With regard to ... Viewpoints vary enormously
+In the present age, ... has sparked much debate
+There has been much discussion revolving around ...
+
+From my perspective
+I am i line with ...
+I ==reckon== that ... owing to manifold reasons
+### P2
+There exists ==myriad== / a tremendous / colossal / vast number of reasons ...
+
+First and foremost / Initially
+    The prime / key method / reasons of
+To elucidate / To explain further / Due to the fact that
+
+In detail / To clarify
+
+Accordingly / Therefore
+    It reinforces my point that ...
+    It is utterly / abundantly + manifest / evident that
+### P3
+To sum up / ==In a nutshell==
+
+==In light of the aforesaid / aforementioned factors==...
+From all the analysis above, it is clear that
+
+I reiterate my point that ...
+Only via this approach that
