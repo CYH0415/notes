@@ -2,10 +2,10 @@
   "accentColor": "#5cbaf5",
   "theme": "obsidian",
   "interfaceFontFamily": "Microsoft YaHei",
-  "baseFontSize": 18,
+  "baseFontSize": 19,
   "translucency": true,
   "textFontFamily": "",
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "Minimal",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Consolas",
   "enabledCssSnippets": [
